@@ -39,9 +39,10 @@ header h2{
 
 /* Navigation */
 
-.navigation{
-    display:none;
-    flex-direction:column;
+nav,
+.navigation {
+    display: flex;
+    flex-direction: column;
 }
 
 .navigation.open{
