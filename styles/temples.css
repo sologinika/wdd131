@@ -56,9 +56,9 @@ header h2{
     transition:.3s;
 }
 
-.navigation a:hover{
-    background:#ffcc00;
-    color:black;
+nav a:hover {
+    background-color: #ffcc00;
+    color: #000;
 }
 
 /* Main */
