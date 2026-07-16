@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Explore Nigeria, its geography, culture and weather.">
+
+    <meta name="author"
+        content="Solomon Ginikachukwu Alagbaoso">
+
+    <title>Place - Nigeria</title>
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Nigeria</h1>
+</header>
+
+<main>
+
+    <section class="hero">
+
+        <picture>
+
+            <source
+                media="(min-width: 768px)"
+                srcset="images/nigeria-large.webp">
+
+            <img
+                src="images/nigeria-small.webp"
+                alt="Beautiful landscape of Nigeria"
+                width="1200"
+                height="700">
+
+        </picture>
+
+    </section>
+
+    <section class="content">
+
+        <section class="card">
+
+            <h2>Data</h2>
+
+            <ul>
+                <li><strong>Capital:</strong> Abuja</li>
+                <li><strong>Population:</strong> 223 Million</li>
+                <li><strong>Area:</strong> 923,769 km²</li>
+                <li><strong>Languages:</strong> English</li>
+                <li><strong>Currency:</strong> Naira (₦)</li>
+                <li><strong>Time Zone:</strong> UTC +1</li>
+            </ul>
+
+        </section>
+
+        <section class="card weather">
+
+            <h2>Weather</h2>
+
+            <img
+                src="images/weather.svg"
+                alt="Weather Icon"
+                class="weather-icon">
+
+            <ul>
+
+                <li><strong>Temperature:</strong> <span id="temperature">8</span>°C</li>
+
+                <li><strong>Conditions:</strong> Partly Cloudy</li>
+
+                <li><strong>Wind:</strong> <span id="windspeed">10</span> km/h</li>
+
+                <li><strong>Wind Chill:</strong>
+                    <span id="windchill"></span>
+                </li>
+
+            </ul>
+
+        </section>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+    
+        <span id="currentyear"></span>
+        Solomon Ginikachukwu Alagbaoso | Nigeria
+    </p>
+
+    <p id="lastModified"></p>
+
+</footer>
+
+</body>
+
+</html>
