@@ -1,0 +1,140 @@
+/* ============================================
+   WDD 131 - Filtered Temple Album
+   Large Screen Stylesheet
+   Author: Alagbaoso Solomon Ginikachukwu
+============================================ */
+
+/* ============================================
+   Desktop Layout (768px and above)
+============================================ */
+
+@media screen and (min-width: 768px) {
+
+    /* ---------- Header ---------- */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    .logo h1 {
+        margin: 0;
+        font-size: 2rem;
+    }
+
+    /* Hide Hamburger Menu */
+
+    #menuButton {
+        display: none;
+    }
+
+    /* Horizontal Navigation */
+
+    nav {
+        display: flex !important;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    nav button {
+        min-width: 110px;
+        transition: background-color 0.3s ease,
+                    color 0.3s ease,
+                    transform 0.2s ease;
+    }
+
+    nav button:hover,
+    nav button:focus {
+        background-color: #0d47a1;
+        color: #ffffff;
+        transform: translateY(-2px);
+    }
+
+    /* ---------- Main ---------- */
+
+    main {
+        padding: 2rem;
+    }
+
+    main h2 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    /* ---------- Temple Grid ---------- */
+
+    .temple-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    /* ---------- Cards ---------- */
+
+    .temple-card {
+        height: 100%;
+    }
+
+    .temple-card img {
+        height: 260px;
+    }
+
+    .card-content {
+        padding: 1.25rem;
+    }
+
+    .card-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .card-content p {
+        font-size: 1rem;
+    }
+
+    /* ---------- Footer ---------- */
+
+    footer {
+        font-size: 1rem;
+    }
+}
+
+/* ============================================
+   Large Desktop (1024px and above)
+============================================ */
+
+@media screen and (min-width: 1024px) {
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .temple-card img {
+        height: 230px;
+    }
+}
+
+/* ============================================
+   Extra Large Screens (1400px and above)
+============================================ */
+
+@media screen and (min-width: 1400px) {
+
+    main {
+        max-width: 1400px;
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2.5rem;
+    }
+
+    .temple-card img {
+        height: 250px;
+    }
+}

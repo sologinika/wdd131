@@ -1,0 +1,258 @@
+/* ============================================
+   WDD 131 - Filtered Temple Album
+   Mobile-First Stylesheet
+   Author: Alagbaoso Solomon Ginikachukwu
+============================================ */
+
+/* ---------- Google Font ---------- */
+
+:root {
+    --primary-color: #0d47a1;
+    --secondary-color: #1565c0;
+    --accent-color: #f5f5f5;
+    --text-color: #222;
+    --white: #ffffff;
+    --border-color: #dcdcdc;
+    --shadow: 0 3px 10px rgba(0,0,0,.15);
+    --radius: 10px;
+
+    --heading-font: "Roboto", sans-serif;
+    --body-font: "Roboto", sans-serif;
+
+    --max-width: 1200px;
+}
+
+/* ---------- Reset ---------- */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------- Base ---------- */
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    background: var(--accent-color);
+    line-height: 1.6;
+}
+
+/* ---------- Header ---------- */
+
+header {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 1rem;
+}
+
+.logo h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* ---------- Menu Button ---------- */
+
+#menuButton {
+    display: block;
+    width: 100%;
+    padding: .8rem;
+    margin-bottom: .5rem;
+
+    background: var(--secondary-color);
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* ---------- Navigation ---------- */
+
+nav {
+    display: none;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+nav.open {
+    display: flex;
+}
+
+nav button {
+    padding: .9rem;
+
+    border: none;
+
+    background: white;
+    color: var(--primary-color);
+
+    font-weight: bold;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+
+nav button:hover,
+nav button:focus {
+    background: #e3f2fd;
+}
+
+/* ---------- Main ---------- */
+
+main {
+    width: min(100%, var(--max-width));
+
+    margin: auto;
+
+    padding: 1rem;
+}
+
+main h2 {
+    text-align: center;
+
+    margin: 1rem 0 2rem;
+
+    color: var(--primary-color);
+
+    font-size: 2rem;
+}
+
+/* ---------- Temple Grid ---------- */
+
+.temple-grid {
+    display: grid;
+
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+}
+
+/* ---------- Temple Card ---------- */
+
+.temple-card {
+
+    background: white;
+
+    border-radius: var(--radius);
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+
+    transition: transform .3s ease;
+}
+
+.temple-card:hover {
+    transform: translateY(-6px);
+}
+
+/* ---------- Image ---------- */
+
+.temple-card img {
+
+    width: 100%;
+
+    height: 240px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+/* ---------- Card Content ---------- */
+
+.card-content {
+
+    padding: 1rem;
+}
+
+.card-content h3 {
+
+    color: var(--primary-color);
+
+    margin-bottom: .8rem;
+
+    text-align: center;
+}
+
+.card-content p {
+
+    margin-bottom: .5rem;
+
+    font-size: .95rem;
+}
+
+.card-content strong {
+
+    color: var(--secondary-color);
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+
+    background: var(--primary-color);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 1.5rem;
+
+    margin-top: 2rem;
+}
+
+footer p {
+
+    margin: .3rem 0;
+}
+
+/* ---------- Accessibility ---------- */
+
+img {
+    max-width: 100%;
+}
+
+button {
+    font-family: inherit;
+}
+
+button:focus-visible {
+    outline: 3px solid gold;
+    outline-offset: 3px;
+}
+
+/* ---------- Smooth Animation ---------- */
+
+.temple-card {
+    animation: fadeIn .5s ease;
+}
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ---------- Utility ---------- */
+
+.hidden {
+    display: none;
+}

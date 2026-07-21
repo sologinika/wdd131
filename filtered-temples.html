@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Filtered Temple Album | WDD 131</title>
+
+    <meta name="description" content="WDD 131 Filtered Temple Album demonstrating responsive design, JavaScript filtering, and dynamically generated temple cards.">
+
+    <meta name="author" content="Alagbaoso Solomon Ginikachukwu">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <h1>Temple Album</h1>
+    </div>
+
+    <button id="menuButton"
+        aria-label="Open Navigation Menu">
+        ☰
+    </button>
+
+    <nav id="navigation">
+
+        <button id="home">Home</button>
+
+        <button id="old">Old</button>
+
+        <button id="new">New</button>
+
+        <button id="large">Large</button>
+
+        <button id="small">Small</button>
+
+    </nav>
+
+</header>
+
+<main>
+
+    <h2>Temple Collection</h2>
+
+    <!-- JavaScript inserts temple cards here -->
+
+    <section id="templeContainer"
+        class="temple-grid">
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+        
+        <span id="currentYear"></span>
+        |
+        Alagbaoso Solomon Ginikachukwu
+        |
+        Nigeria
+    </p>
+
+    <p id="lastModified"></p>
+
+</footer>
+
+</body>
+</html>
