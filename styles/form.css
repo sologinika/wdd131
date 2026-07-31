@@ -1,0 +1,268 @@
+/* ============================================
+   WDD 131 - Week 05 Product Review
+   form.css
+   Mobile First Styles
+   Author: Alagbaoso Solomon Ginikachukwu
+============================================ */
+
+/* ---------- CSS Variables ---------- */
+
+:root {
+    --primary-color: #0f4c81;
+    --secondary-color: #f5f7fa;
+    --accent-color: #ffb703;
+    --text-color: #333333;
+    --border-color: #d9d9d9;
+    --white: #ffffff;
+    --shadow: rgba(0, 0, 0, 0.15);
+
+    --heading-font: "Segoe UI", Arial, sans-serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* ---------- Reset ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- Body ---------- */
+
+body {
+    font-family: var(--body-font);
+    background: var(--secondary-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* ---------- Header ---------- */
+
+header {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: .5rem;
+    font-size: 2rem;
+}
+
+header p {
+    font-size: 1rem;
+}
+
+/* ---------- Main ---------- */
+
+main {
+    width: 95%;
+    max-width: 700px;
+    margin: 2rem auto;
+}
+
+/* ---------- Form ---------- */
+
+form {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px var(--shadow);
+}
+
+/* ---------- Fieldsets ---------- */
+
+fieldset {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    padding: 1.2rem;
+}
+
+legend {
+    font-weight: bold;
+    color: var(--primary-color);
+    padding: 0 .5rem;
+}
+
+/* ---------- Labels ---------- */
+
+label {
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+
+/* ---------- Required ---------- */
+
+.required {
+    color: crimson;
+}
+
+/* ---------- Inputs ---------- */
+
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: .75rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* ---------- Focus ---------- */
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid var(--accent-color);
+    border-color: var(--primary-color);
+}
+
+/* ---------- Rating ---------- */
+
+.rating {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.rating label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.rating input[type="radio"] {
+    margin-right: .75rem;
+}
+
+/* ---------- Checkbox Group ---------- */
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.checkbox-group input {
+    margin-right: .6rem;
+}
+
+/* ---------- Submit Button ---------- */
+
+.submit-btn {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+input[type="submit"] {
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: .9rem 2rem;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background .3s ease;
+}
+
+input[type="submit"]:hover {
+    background: #09365d;
+}
+
+/* ---------- Confirmation Page ---------- */
+
+.confirmation {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px var(--shadow);
+    text-align: center;
+}
+
+.confirmation h2,
+.confirmation h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.confirmation p {
+    margin-bottom: 1rem;
+}
+
+.confirmation hr {
+    margin: 2rem 0;
+    border: none;
+    border-top: 1px solid var(--border-color);
+}
+
+/* ---------- Button Link ---------- */
+
+.button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .8rem 1.5rem;
+    background: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background .3s ease;
+}
+
+.button:hover {
+    background: #09365d;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+    margin-top: 3rem;
+    padding: 1.5rem;
+    text-align: center;
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+footer p {
+    margin: .35rem 0;
+}
+
+/* ---------- Small Devices ---------- */
+
+@media (max-width: 500px) {
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    form {
+        padding: 1.25rem;
+    }
+
+    fieldset {
+        padding: 1rem;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+}
