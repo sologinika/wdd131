@@ -1,0 +1,1123 @@
+/* ===========================================================
+   GINSOLO VENTURES
+   WDD 131 FINAL PROJECT
+   base.css (Part 1)
+   Mobile-First Design
+=========================================================== */
+
+/* ===========================================================
+   CSS VARIABLES
+=========================================================== */
+
+:root {
+
+    --primary-color: #1d3557;
+    --secondary-color: #457b9d;
+    --accent-color: #f4a261;
+    --light-color: #f8f9fa;
+    --white: #ffffff;
+    --dark-color: #222222;
+    --gray-color: #6c757d;
+    --border-color: #dddddd;
+
+    --heading-font: "Montserrat", sans-serif;
+    --body-font: "Open Sans", sans-serif;
+
+    --max-width: 1200px;
+
+    --shadow:
+        0 5px 15px rgba(0,0,0,.12);
+
+    --transition:
+        all .3s ease;
+
+}
+
+/* ===========================================================
+   RESET
+=========================================================== */
+
+*,
+*::before,
+*::after {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+body {
+
+    font-family: var(--body-font);
+
+    background: var(--light-color);
+
+    color: var(--dark-color);
+
+    line-height: 1.6;
+
+}
+
+/* ===========================================================
+   IMAGES
+=========================================================== */
+
+img {
+
+    display: block;
+
+    width: 100%;
+
+    height: auto;
+
+}
+
+/* ===========================================================
+   LINKS
+=========================================================== */
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+/* ===========================================================
+   LISTS
+=========================================================== */
+
+ul {
+
+    list-style: none;
+
+}
+
+/* ===========================================================
+   HEADINGS
+=========================================================== */
+
+h1,
+h2,
+h3,
+h4 {
+
+    font-family: var(--heading-font);
+
+    color: var(--primary-color);
+
+    line-height: 1.2;
+
+}
+
+h1 {
+
+    font-size: 2rem;
+
+}
+
+h2 {
+
+    font-size: 1.8rem;
+
+    text-align: center;
+
+    margin-bottom: 1rem;
+
+}
+
+h3 {
+
+    font-size: 1.25rem;
+
+}
+
+/* ===========================================================
+   PARAGRAPHS
+=========================================================== */
+
+p {
+
+    margin-bottom: 1rem;
+
+}
+
+/* ===========================================================
+   SECTIONS
+=========================================================== */
+
+section {
+
+    padding: 3rem 1rem;
+
+}
+
+/* ===========================================================
+   CONTAINER
+=========================================================== */
+
+.container {
+
+    max-width: var(--max-width);
+
+    margin: auto;
+
+}
+
+/* ===========================================================
+   HEADER
+=========================================================== */
+
+header {
+
+    background: var(--primary-color);
+
+    color: var(--white);
+
+    padding: 1rem;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: var(--shadow);
+
+}
+
+/* ===========================================================
+   LOGO
+=========================================================== */
+
+.logo-container {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 1rem;
+
+}
+
+.logo-container img {
+
+    width: 75px;
+
+    border-radius: 50%;
+
+}
+
+.logo-container h1 {
+
+    color: white;
+
+    font-size: 1.6rem;
+
+}
+
+.logo-container p {
+
+    color: white;
+
+    font-size: .95rem;
+
+    margin: 0;
+
+}
+
+/* ===========================================================
+   MOBILE MENU BUTTON
+=========================================================== */
+
+#menuButton {
+
+    background: none;
+
+    border: none;
+
+    color: white;
+
+    font-size: 2rem;
+
+    cursor: pointer;
+
+    margin-top: .8rem;
+
+}
+
+/* ===========================================================
+   NAVIGATION
+=========================================================== */
+
+.navigation {
+
+    display: none;
+
+    margin-top: 1rem;
+
+}
+
+.navigation.open {
+
+    display: block;
+
+}
+
+.navigation li {
+
+    margin: .75rem 0;
+
+}
+
+.navigation a {
+
+    display: block;
+
+    color: white;
+
+    font-weight: 600;
+
+    padding: .75rem;
+
+    border-radius: 5px;
+
+    transition: var(--transition);
+
+}
+
+.navigation a:hover {
+
+    background: var(--accent-color);
+
+    color: white;
+
+}
+
+.navigation a.active {
+
+    background: var(--accent-color);
+
+}
+
+/* ===========================================================
+   HERO
+=========================================================== */
+
+.hero {
+
+    position: relative;
+
+}
+
+.hero picture img {
+
+    width: 100%;
+
+    height: auto;
+
+}
+
+.hero-content {
+
+    background: rgba(29,53,87,.90);
+
+    color: white;
+
+    padding: 2rem;
+
+    text-align: center;
+
+}
+
+.hero-content h2 {
+
+    color: white;
+
+    margin-bottom: 1rem;
+
+}
+
+.hero-content p {
+
+    max-width: 700px;
+
+    margin: auto auto 2rem;
+
+}
+
+/* ===========================================================
+   BUTTONS
+=========================================================== */
+
+.btn {
+
+    display: inline-block;
+
+    background: var(--accent-color);
+
+    color: white;
+
+    padding: .85rem 2rem;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+
+    transition: var(--transition);
+
+}
+
+.btn:hover {
+
+    background: #d9822b;
+
+    transform: translateY(-2px);
+
+}
+
+/* ===========================================================
+   TABLES
+=========================================================== */
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 1rem;
+
+}
+
+th {
+
+    background: var(--primary-color);
+
+    color: white;
+
+    padding: .85rem;
+
+}
+
+td {
+
+    padding: .85rem;
+
+    border: 1px solid var(--border-color);
+
+}
+
+/* ===========================================================
+   FORM ELEMENTS
+=========================================================== */
+
+input,
+textarea,
+select {
+
+    width: 100%;
+
+    padding: .85rem;
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 5px;
+
+    font-family: inherit;
+
+    font-size: 1rem;
+
+}
+
+label {
+
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: .35rem;
+
+}
+
+.form-group {
+
+    margin-bottom: 1.25rem;
+
+}
+
+button {
+
+    font-family: inherit;
+
+}
+
+/* ===========================================================
+   ACCESSIBILITY
+=========================================================== */
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+
+    outline: 3px solid var(--accent-color);
+
+    outline-offset: 3px;
+
+}
+
+/* ===========================================================
+   UTILITIES
+=========================================================== */
+
+.text-center {
+
+    text-align: center;
+
+}
+
+.hidden {
+
+    display: none;
+
+}
+
+/* ===========================================================
+   GINSOLO VENTURES
+   WDD 131 FINAL PROJECT
+   base.css (Part 2)
+=========================================================== */
+
+/* ===========================================================
+   ABOUT SECTION
+=========================================================== */
+
+.about {
+
+    background: var(--white);
+
+}
+
+.about-grid {
+
+    display: grid;
+
+    gap: 2rem;
+
+    align-items: center;
+
+    max-width: var(--max-width);
+
+    margin: auto;
+
+}
+
+.about img {
+
+    border-radius: 10px;
+
+    box-shadow: var(--shadow);
+
+}
+
+.about p {
+
+    color: var(--gray-color);
+
+}
+
+/* ===========================================================
+   SERVICES
+=========================================================== */
+
+.services {
+
+    background: var(--light-color);
+
+}
+
+.service-grid {
+
+    display: grid;
+
+    gap: 2rem;
+
+    max-width: var(--max-width);
+
+    margin: auto;
+
+}
+
+.service-card {
+
+    background: var(--white);
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+
+    transition: var(--transition);
+
+}
+
+.service-card:hover {
+
+    transform: translateY(-8px);
+
+}
+
+.service-card img {
+
+    height: 230px;
+
+    object-fit: cover;
+
+}
+
+.service-card h3 {
+
+    padding: 1rem 1rem .5rem;
+
+}
+
+.service-card p {
+
+    padding: 0 1rem 1.5rem;
+
+}
+
+/* ===========================================================
+   WHY CHOOSE US
+=========================================================== */
+
+.why-us {
+
+    background: var(--white);
+
+}
+
+.why-grid {
+
+    display: grid;
+
+    gap: 1.5rem;
+
+    max-width: var(--max-width);
+
+    margin: auto;
+
+}
+
+.why-grid article {
+
+    background: var(--light-color);
+
+    padding: 2rem;
+
+    border-left: 5px solid var(--accent-color);
+
+    border-radius: 8px;
+
+    transition: var(--transition);
+
+}
+
+.why-grid article:hover {
+
+    transform: translateY(-5px);
+
+}
+
+.why-grid h3 {
+
+    margin-bottom: .8rem;
+
+}
+
+/* ===========================================================
+   FLEET
+=========================================================== */
+
+.fleet {
+
+    background: var(--light-color);
+
+    text-align: center;
+
+}
+
+.fleet-gallery {
+
+    display: grid;
+
+    gap: 2rem;
+
+    margin-top: 2rem;
+
+    max-width: var(--max-width);
+
+    margin-inline: auto;
+
+}
+
+.fleet-gallery figure {
+
+    background: var(--white);
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+
+    transition: var(--transition);
+
+}
+
+.fleet-gallery figure:hover {
+
+    transform: scale(1.03);
+
+}
+
+.fleet-gallery img {
+
+    height: 250px;
+
+    object-fit: cover;
+
+}
+
+figcaption {
+
+    padding: 1rem;
+
+    font-weight: 600;
+
+}
+
+/* ===========================================================
+   TESTIMONIALS
+=========================================================== */
+
+.testimonials {
+
+    background: var(--primary-color);
+
+    color: white;
+
+}
+
+.testimonials h2 {
+
+    color: white;
+
+}
+
+.testimonial-grid {
+
+    display: grid;
+
+    gap: 2rem;
+
+    max-width: var(--max-width);
+
+    margin: auto;
+
+}
+
+.testimonial-card {
+
+    background: rgba(255,255,255,.10);
+
+    padding: 2rem;
+
+    border-radius: 10px;
+
+    backdrop-filter: blur(5px);
+
+}
+
+.testimonial-card blockquote {
+
+    font-style: italic;
+
+    margin-bottom: 1rem;
+
+}
+
+.testimonial-card h3 {
+
+    color: white;
+
+    margin-bottom: .3rem;
+
+}
+
+.testimonial-card p {
+
+    color: #eeeeee;
+
+}
+
+/* ===========================================================
+   CALL TO ACTION
+=========================================================== */
+
+.cta,
+.service-cta,
+.contact-cta {
+
+    background: var(--accent-color);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 4rem 1rem;
+
+}
+
+.cta h2,
+.service-cta h2,
+.contact-cta h2 {
+
+    color: white;
+
+}
+
+.cta-content {
+
+    max-width: 750px;
+
+    margin: auto;
+
+}
+
+.cta .btn,
+.service-cta .btn,
+.contact-cta .btn {
+
+    background: var(--primary-color);
+
+    margin-top: 1rem;
+
+}
+
+.cta .btn:hover,
+.service-cta .btn:hover,
+.contact-cta .btn:hover {
+
+    background: #10243d;
+
+}
+
+/* ===========================================================
+   FAQ
+=========================================================== */
+
+.faq,
+.contact-faq {
+
+    background: var(--white);
+
+}
+
+.faq-container,
+.faq-grid {
+
+    display: grid;
+
+    gap: 1.5rem;
+
+    max-width: var(--max-width);
+
+    margin: auto;
+
+}
+
+.faq-item,
+.faq-card {
+
+    background: var(--light-color);
+
+    padding: 1.5rem;
+
+    border-radius: 8px;
+
+    box-shadow: var(--shadow);
+
+}
+
+.faq-item h3,
+.faq-card h3 {
+
+    margin-bottom: .75rem;
+
+}
+
+/* ===========================================================
+   PRICING TABLE
+=========================================================== */
+
+.pricing {
+
+    background: var(--white);
+
+}
+
+.table-container {
+
+    overflow-x: auto;
+
+    max-width: var(--max-width);
+
+    margin: auto;
+
+}
+
+/* ===========================================================
+   CONTACT
+=========================================================== */
+
+.contact-info,
+.quote-section,
+.business-hours,
+.map-section {
+
+    background: var(--white);
+
+}
+
+.contact-grid {
+
+    display: grid;
+
+    gap: 1.5rem;
+
+    max-width: var(--max-width);
+
+    margin: auto;
+
+}
+
+.contact-grid article {
+
+    background: var(--light-color);
+
+    padding: 1.5rem;
+
+    border-radius: 8px;
+
+    box-shadow: var(--shadow);
+
+}
+
+.quote-section form {
+
+    max-width: 750px;
+
+    margin: auto;
+
+}
+
+.map-container {
+
+    max-width: var(--max-width);
+
+    margin: auto;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+
+}
+
+.map-container iframe {
+
+    width: 100%;
+
+    height: 450px;
+
+    border: 0;
+
+}
+
+/* ===========================================================
+   FOOTER
+=========================================================== */
+
+footer {
+
+    background: var(--primary-color);
+
+    color: white;
+
+    padding: 3rem 1rem 1rem;
+
+}
+
+.footer-container,
+.footer-grid {
+
+    display: grid;
+
+    gap: 2rem;
+
+    max-width: var(--max-width);
+
+    margin: auto;
+
+}
+
+footer h3 {
+
+    color: white;
+
+    margin-bottom: 1rem;
+
+}
+
+footer p {
+
+    color: #eeeeee;
+
+}
+
+footer ul {
+
+    padding: 0;
+
+}
+
+footer li {
+
+    margin-bottom: .75rem;
+
+}
+
+footer a {
+
+    color: white;
+
+    transition: var(--transition);
+
+}
+
+footer a:hover {
+
+    color: var(--accent-color);
+
+}
+
+/* ===========================================================
+   SOCIAL ICONS
+=========================================================== */
+
+.social-icons,
+.social-links {
+
+    display: flex;
+
+    gap: 1rem;
+
+    margin-top: 1rem;
+
+}
+
+.social-icons img,
+.social-links img {
+
+    width: 40px;
+
+    height: 40px;
+
+    border-radius: 50%;
+
+    transition: var(--transition);
+
+}
+
+.social-icons img:hover,
+.social-links img:hover {
+
+    transform: scale(1.15);
+
+}
+
+/* ===========================================================
+   COPYRIGHT
+=========================================================== */
+
+.footer-bottom,
+.copyright {
+
+    text-align: center;
+
+    border-top: 1px solid rgba(255,255,255,.2);
+
+    margin-top: 2rem;
+
+    padding-top: 1rem;
+
+    font-size: .95rem;
+
+}
+
+/* ===========================================================
+   ANIMATIONS
+=========================================================== */
+
+.card,
+.service-card,
+.testimonial-card,
+.faq-card,
+.faq-item {
+
+    transition: var(--transition);
+
+}
+
+.card:hover,
+.service-card:hover,
+.testimonial-card:hover,
+.faq-card:hover,
+.faq-item:hover {
+
+    transform: translateY(-6px);
+
+}
+
+/* ===========================================================
+   SPACING
+=========================================================== */
+
+section h2 {
+
+    margin-bottom: 2rem;
+
+}
+
+section p {
+
+    max-width: 900px;
+
+}
+
+/* ===========================================================
+   END OF BASE.CSS
+=========================================================== */

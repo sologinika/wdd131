@@ -1,0 +1,369 @@
+/* ===========================================================
+   GINSOLO VENTURES
+   WDD 131 FINAL PROJECT
+   large.css
+   Responsive Layouts
+=========================================================== */
+
+/* ===========================================================
+   TABLETS (768px and above)
+=========================================================== */
+
+@media only screen and (min-width: 768px) {
+
+    /* ================= HEADER ================= */
+
+    header {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+
+    }
+
+    #menuButton {
+
+        display: none;
+
+    }
+
+    .navigation {
+
+        display: flex !important;
+        gap: 1rem;
+        margin-top: 0;
+
+    }
+
+    .navigation li {
+
+        margin: 0;
+
+    }
+
+    .navigation a {
+
+        padding: .8rem 1.2rem;
+
+    }
+
+    /* ================= HERO ================= */
+
+    .hero {
+
+        position: relative;
+
+    }
+
+    .hero-content {
+
+        position: absolute;
+
+        top: 50%;
+        left: 8%;
+
+        transform: translateY(-50%);
+
+        max-width: 550px;
+
+        border-radius: 10px;
+
+        text-align: left;
+
+    }
+
+    .hero-content h2 {
+
+        font-size: 2.5rem;
+
+    }
+
+    /* ================= ABOUT ================= */
+
+    .about-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    /* ================= SERVICES ================= */
+
+    .service-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    /* ================= WHY CHOOSE US ================= */
+
+    .why-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    /* ================= FLEET ================= */
+
+    .fleet-gallery {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    /* ================= TESTIMONIALS ================= */
+
+    .testimonial-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    /* ================= CONTACT ================= */
+
+    .contact-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    /* ================= FAQ ================= */
+
+    .faq-grid,
+    .faq-container {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    /* ================= FOOTER ================= */
+
+    .footer-grid,
+    .footer-container {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+/* ===========================================================
+   DESKTOPS (1024px and above)
+=========================================================== */
+
+@media only screen and (min-width: 1024px) {
+
+    body {
+
+        font-size: 18px;
+
+    }
+
+    section {
+
+        padding: 5rem 2rem;
+
+    }
+
+    /* ================= HERO ================= */
+
+    .hero-content {
+
+        max-width: 600px;
+
+        padding: 3rem;
+
+    }
+
+    .hero-content h2 {
+
+        font-size: 3rem;
+
+    }
+
+    .hero-content p {
+
+        font-size: 1.1rem;
+
+    }
+
+    /* ================= ABOUT ================= */
+
+    .about-grid {
+
+        gap: 4rem;
+
+    }
+
+    /* ================= SERVICES ================= */
+
+    .service-grid {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    /* ================= WHY CHOOSE US ================= */
+
+    .why-grid {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    /* ================= FLEET ================= */
+
+    .fleet-gallery {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    /* ================= TESTIMONIALS ================= */
+
+    .testimonial-grid {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    /* ================= CONTACT INFO ================= */
+
+    .contact-grid {
+
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
+    /* ================= FAQ ================= */
+
+    .faq-grid,
+    .faq-container {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    /* ================= FOOTER ================= */
+
+    .footer-grid,
+    .footer-container {
+
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+
+    /* ================= FORM ================= */
+
+    .quote-section form {
+
+        max-width: 900px;
+
+    }
+
+    /* ================= CTA ================= */
+
+    .cta-content {
+
+        max-width: 850px;
+
+    }
+
+}
+
+/* ===========================================================
+   LARGE DESKTOPS (1400px and above)
+=========================================================== */
+
+@media only screen and (min-width: 1400px) {
+
+    body {
+
+        font-size: 19px;
+
+    }
+
+    .container {
+
+        max-width: 1350px;
+
+    }
+
+    .hero-content {
+
+        max-width: 700px;
+
+    }
+
+    .hero-content h2 {
+
+        font-size: 3.5rem;
+
+    }
+
+    .hero-content p {
+
+        font-size: 1.2rem;
+
+    }
+
+    .service-grid {
+
+        gap: 2.5rem;
+
+    }
+
+    .why-grid {
+
+        gap: 2rem;
+
+    }
+
+    .fleet-gallery {
+
+        gap: 2rem;
+
+    }
+
+}
+
+/* ===========================================================
+   HOVER EFFECTS
+=========================================================== */
+
+@media (hover:hover) {
+
+    .service-card:hover,
+    .testimonial-card:hover,
+    .faq-card:hover,
+    .faq-item:hover,
+    .why-grid article:hover,
+    .fleet-gallery figure:hover {
+
+        transform: translateY(-8px);
+
+    }
+
+    .btn:hover {
+
+        transform: translateY(-3px);
+
+    }
+
+}
+
+/* ===========================================================
+   REDUCE MOTION ACCESSIBILITY
+=========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    * {
+
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+
+    }
+
+}
